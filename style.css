@@ -73,6 +73,7 @@ footer {
 .footer-brand {
   max-width: 250px;
   margin-right: 130px;
+  color: #e7b352 ;
 }
 
 .footer-logo {
@@ -93,7 +94,7 @@ footer {
 
 .footer-links {
   width: 100%;
-  color: #b60312;
+  color: #e7b352;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 50px;
@@ -116,39 +117,13 @@ ul .link-item:not(:last-child) { margin-bottom: 10px; }
 }
 
 .footer-copyright p,
-.wrapper a { font-size: var(--fs-sm)}
+.wrapper a { font-size: var(--fs-sm); }
 
+.wrapper a:hover {color: var(--light-azure); }
 
+.wrapper { display: flex; }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.wrapper a:not(:last-child) {margin-right: 30px; }
 
 
 
