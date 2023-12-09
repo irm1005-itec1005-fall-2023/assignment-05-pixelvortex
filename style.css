@@ -83,13 +83,13 @@ footer {
 
 .slogan {
   font-size: var(--fs-sm);
-  line-height: 20px;
+  line-height: 35px;
   margin-bottom: 20px;
 }
 
-.social-link ion-icon {
-  font-size: 25px;
-  margin-right: 20px;
+.social-link {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Adjust the number of columns as needed */
 }
 
 .footer-links {
@@ -98,7 +98,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 50px;
-  align-items: flex-end;
+  margin-top: 30px;
 }
 
 .link-heading {margin-bottom: 20px; }
@@ -114,6 +114,7 @@ ul .link-item:not(:last-child) { margin-bottom: 10px; }
   justify-content: space-between;
   align-items: center;
   padding-top: 40px;
+  color: #f0aa28;
 }
 
 .footer-copyright p,
@@ -125,14 +126,28 @@ ul .link-item:not(:last-child) { margin-bottom: 10px; }
 
 .wrapper a:not(:last-child) {margin-right: 30px; }
 
+ul {
+  list-style: none;
+}
 
+a {
+  text-decoration: none;
+  color: #a36c05;
+}
 
+footer h4 {
+  text-align: left;
 
+}
 
+footer {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  font-weight: 400;
+}
 
-
-
-
+footer p {
+  white-space: nowrap;
+}
 
 
 
