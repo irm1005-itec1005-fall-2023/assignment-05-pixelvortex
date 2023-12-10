@@ -3,80 +3,75 @@
 //  YOU CAN REMOVE ALL OF THIS CODE AND START FRESH
 //
 
-//
-// Variables
-//
+// baad ma
+let header = document.querySelector('header');
 
-// Constants
-const appID = "app";
-const headingText = "Develop. Preview. Ship.";
-const headingTextIcon = "🚀";
-const projectDueDate = "8 December 2023 11:59";
+window.addEventListener('scroll', () =>{
+  header.classList.toggle('shadow', window.scrollY > 0);
+});
 
-// Variables
-let countdownDate = new Date(projectDueDate);
+// responsive 
+let menu = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
 
-// DOM Elements
-let appContainer = document.getElementById(appID);
+// Animated Counter
+function animateCounter(element, targetValue, duration) {
+  let currentValue = 0;
+  const step = targetValue / (duration / 16); // Assuming 60fps
 
-//
-// Functions
-//
+  function updateCounter() {
+      currentValue += step;
+      element.textContent = Math.floor(currentValue);
 
-function calculateDaysLeft(countdownDate) {
-  const now = new Date().getTime();
-  const countdown = new Date(countdownDate).getTime();
-
-  console.log(countdown);
-
-  const difference = (countdown - now) / 1000;
-
-
-  // Countdown passed already
-  if (difference < 1) {
-    return null;
+      if (currentValue < targetValue) {
+          requestAnimationFrame(updateCounter);
+      }
   }
 
-
-  const days = Math.floor(difference / (60 * 60 * 24));
-
-  return days;
+  updateCounter();
 }
 
-// Add a heading to the app container
-function inititialise() {
-  // If anything is wrong with the app container then end
-  if (!appContainer) {
-    console.error("Error: Could not find app contianer");
-    return;
-  }
-
-  // Create an h1 and add it to our app
-  const h1 = document.createElement("h1");
-  const daysLeft = calculateDaysLeft(countdownDate);
-  let headingTextCalculated = headingText;
-
-  if (daysLeft > 1) {
-    headingTextCalculated = headingTextCalculated.concat(
-      " In ",
-      daysLeft.toString(),
-      " days "
-    );
-  }else if (daysLeft === 1) {
-    headingTextCalculated = headingTextCalculated.concat(
-      " Tomorrow"
-    );
-  }
-
-  h1.textContent = headingTextCalculated.concat(headingTextIcon);
-  appContainer.appendChild(h1);
-
-  // Init complete
-  console.log("App successfully initialised");
+menu.onclick = ()  =>{
+  menu.classList.toggle('bx-x');
+  navbar.classList.toggle('active');
+}
+window.onscroll = () =>{
+  menu.classList.remove('bx-x');
+  navbar.classList.remove('active');
 }
 
-//
-// Inits & Event Listeners
-//
+// Smooth Scrolling
+document.querySelectorAll('.scroll-link').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
 
-inititialise();
+      const targetSection = document.querySelector(this.getAttribute('href'));
+      targetSection.scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
+
+// Trigger Counter Animation
+let counterButton = document.querySelector('.counter-button');
+let counterElement = document.querySelector('.counter');
+
+counterButton.addEventListener('click', () => {
+  animateCounter(counterElement, 100, 2000); // Count from 0 to 100 in 2000 milliseconds
+});
+
+
+var homeSwiper = new Swiper(".Home", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+ 

@@ -22,6 +22,9 @@
     <!-- Set the Favicon  -->
     <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
 
+    <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
   </head>
   <body>
     <!--
@@ -31,110 +34,272 @@
       YOU MAY REMOVE THE BOILERPLATE CODE BELOW
 
     -->
-    <main>
-      <div id="app"></div>
-    </main>
+     
+    <header>
+      <a href="#home" class="logo">
+          <i class='bx bxs-movie' ></i>CineWorld
+      </a>
+      <div class="bx bx-menu" id="menu-icon"></div>
 
-    <footer>
+      <!-- menu  -->
+      <button class="counter-button">Start Counter Animation</button>
+      <ul class="navbar">
+          <li><a href="#home" class="home-active scroll-link">Home</a></li>
+          <li><a href="#nostalgia" class="scroll-link">Nostalgia</a></li>
+          <li><a href="#Coming" class="scroll-link">Coming Soon</a></li>
+          <li><a href="#newsletter" class="scroll-link">Newsletter</a></li>
+      </ul>
+      <a href="#" class="btn">Sign In</a>
+  </header>
 
-      <div class="footer-content">
-        <div class="footer-brand">
-          <img src="./images/A.jpg" alt="" class="footer-logo">
-          <p class="slogan"> Theatre Of Life.</p>
-          <p class="slogan">Exploring Cinematic Wonders.</p>
-
-          <div class="social-link"> 
-
-            <a href="#">
-              <img alt="Facebook-icon" 
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png" 
-              width="30" 
-              height="30">
-            </a>
-
-            <a href="#">
-              <img alt="twitter-icon" 
-              src="https://cdn-icons-png.flaticon.com/512/145/145812.png" 
-              width="30" 
-              height="30">
-            </a>
-
-            <a href="#">
-              <img alt="instagram-icon" 
-              src="https://i0.wp.com/bodybeyondlimits.com.au/wp-content/uploads/2022/07/instagram-circle-icon-png-4.png?ssl=1" 
-              width="30" 
-              height="30">
-            </a>
-
-            <a href="#">
-              <img alt="tiktok-icon" 
-              src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/tiktok-round-white-icon.png" 
-              width="30" 
-              height="30">
-            </a>
-
-            <a href="#">
-              <img alt="youtube-icon" 
-              src="https://static-00.iconduck.com/assets.00/youtube-round-2-icon-2048x2048-ayjtmdvq.png" 
-              width="30" 
-              height="30">
-            </a>
+  <!-- Home -->
+  <section class="home swiper" id="home">
+   
+      <div class="swiper-wrapper">
+          <div class="swiper-slide container">
+              <img src="./images/mario2.webp" alt="mario">
+              <div class="home-text">
+                  <span>Universal Pictures</span>
+                  <h1>The Super Mario Bros. Movie</h1>
+                  <a href="#" class="btn">Book Now</a>
+                  <a href="#" class="play">
+                      <i class='bx bx-play'></i>
+                  </a>
+              </div>
           </div>
+          
+          
+             
         </div>
+        <div class="swiper-pagination"></div>
+  </section>
 
-        <div class="footer-links">
-          <ul>
-            <h4 class="link-item">Theatre Of Life</h4>
-
-            <li class="link-item"><a href="#">Account</a></li>
-            <li class="link-item"><a href="#">Tickets</a></li>
-            <li class="link-item"><a href="#">About Us</a></li>
-            <li class="link-item"><a href="#">Contact Us</a></li>
-          </ul>
-
-          <ul>
-            <h4 class="link-heading">Browse</h4>
-
-            <li class="link-item"><a href="#">What's On</a></li>
-            <li class="link-item"><a href="#">Food &amp; Drink</a></li>
-            <li class="link-item"><a href="#">Premium Experiences</a></li>
-            <li class="link-item"><a href="#">Private Reservations</a></li>
-          </ul>
-
-          <ul>
-            <h4 class="link-item">Menu</h4>
-
-            <li class="link-item"><a href="#">Movies</a></li>
-            <li class="link-item"><a href="#">TV Shows</a></li>
-            <li class="link-item"><a href="#">Trailers</a></li>
-            <li class="link-item"><a href="#">Genres</a></li>
-          </ul>
-
-          <ul>
-            <h4 class="link-heading">Help</h4>
-
-            <li class="link-item"><a href="#">Account &amp; Billing</a></li>
-            <li class="link-item"><a href="#">Plans &amp; Pricing</a></li>
-            <li class="link-item"><a href="#">Accessibility</a></li>
-          </ul>
-        </div>
-
-      </div><div class="footer-copyright">
-
-        <div class="copyright">
-          <p>© Copyright 2024 Theatre Of Life</p>
-        </div>
-
-        <div class="wrapper">
-          <a href="#"> Privacy Policy</a>
-          <a href="#"> Terms and Conditions</a>
-        </div>
-
+<!-- movies  -->
+<section class="Nostalgia" id="Nostalgia">
+    <h2 class="heading">Nostalgia</h2>
+    <!-- nostalgia container  -->
+    <div class="Nostalgia-container">
+      <!-- box-1  -->
+      <div class="box">
+          <div class="box-img">
+              <img src="./images/charliejpg.jpeg" alt="charlie">
+          </div>
+          <h3>Charlie and the chocolate factory</h3>
+          <span>1h 55m |Family/Fantasy</span>
       </div>
-    </footer>
+
+      <!-- box-2  -->
+      <div class="box">
+          <div class="box-img">
+              <img src="./images/honney.jpeg" alt="honey">
+          </div>
+          <h3>Honey I shrunk The Kids</h3>
+          <span>1h 33m | Family/Comedy</span>
+      </div>
+
+      <!-- box-3  -->
+      <div class="box">
+          <div class="box-img">
+              <img src="./images/robots.jpg" alt="Robots">
+          </div>
+          <h3>Robots</h3>
+          <span>1h 31m |Adventure/Sci-fi</span>
+      </div>
+
+      <!-- box-4  -->
+      <div class="box">
+          <div class="box-img">
+              <img src="./images/spyyyy.jpeg" alt="Spy">
+          </div>
+          <h3>Spy Kids 3-D</h3>
+          <span>1h 24m | Action/Comedy</span>
+      </div>
+  
+      <!-- box-5  -->
+      <div class="box">
+          <div class="box-img">
+              <img src="./images/wall.jpeg" alt="walle">
+          </div>
+          <h3>WALL-E</h3>
+          <span>1h 38m| Sci-fi/Family</span>
+      </div>
+
+      <!-- box-6  -->
+      <div class="box">
+          <div class="box-img">
+              <img src="./images/boo york.jpg" alt="Monster">
+          </div>
+          <h3>Monster High: Boo York, Boo York</h3>
+          <span>1h 12m | Musical/Family</span>
+      </div>
+
+    <!-- box-7  -->
+      <div class="box">
+          <div class="box-img">
+              <img src="./images/upppp.jpeg" alt="up">
+          </div>
+          <h3>Up</h3>
+          <span>1h 36m | Adventure/Comedy</span>
+      </div>
+  
+    <!-- box-8  -->
+      <div class="box">
+          <div class="box-img">
+              <img src="./images/monster.jpeg" alt="monsterinc">
+          </div>
+          <h3>Monsters, Inc</h3>
+          <span>1h 32m | Comedy/Fantasy</span>
+      </div>
+
+    <!-- box-9  -->
+      <div class="box">
+          <div class="box-img">
+              <img src="./images/mulan.jpeg" alt="mulan">
+          </div>
+          <h3>Mulan</h3>
+          <span>1h 28m | Musical/Family</span>
+      </div>
+
+    <!-- box-10  -->
+      <div class="box">
+          <div class="box-img">
+              <img src="./images/bambi.jpeg" alt="bambi">
+          </div>
+          <h3>Bambi</h3>
+          <span>1h 10m | Family/Fantasy</span>
+      </div>
+    </div>
+</section>
+<!-- movies  -->
+<section class="Comming Soon" id="Coming Soon">
+  <h2 class="heading">Coming Soon</h2>
+  <!-- coming container  -->
+  <div class="coming-container">
+    <!-- box-1  -->
+    <div class="box1">
+        <div class="box1-img">
+            <img src="./images/coach.jpg" alt="coach">
+        </div>
+        <h3>Coach Carter</h3>
+        
+    </div>
+
+    <!-- box-2  -->
+    <div class="box1">
+        <div class="box1-img">
+            <img src="./images/pacifier.jpeg" alt="pacifier">
+        </div>
+        <h3>The Pacifier</h3>
+        
+    </div>
+
+    <!-- box-3  -->
+    <div class="box1">
+        <div class="box1-img">
+            <img src="./images/wave.jpg" alt="wave">
+        </div>
+        <h3>The 5th Wave</h3>
+        
+    </div>
+
+    <!-- box-4  -->
+    <div class="box1">
+        <div class="box1-img">
+            <img src="./images/reina.jpeg" alt="reina">
+        </div>
+        <h3>La Reina del Sur</h3>
+        
+    </div>
+
+    <!-- box-5  -->
+    <div class="box1">
+        <div class="box1-img">
+            <img src="./images/barber.jpg" alt="barber">
+        </div>
+        <h3>Barbershop: The Next Cut</h3>
+        
+    </div>
+
+    <!-- box-6  -->
+    <div class="box1">
+        <div class="box1-img">
+            <img src="./images/barbie.jpg" alt="barbie">
+        </div>
+        <h3>Barbie</h3>
+        
+    </div>
+
+  <!-- box-7  -->
+    <div class="box1">
+        <div class="box1-img">
+            <img src="./images/nerve.jpg" alt="nerve">
+        </div>
+        <h3>Nerve</h3>
+        
+    </div>
+
+  <!-- box-8  -->
+    <div class="box1">
+        <div class="box1-img">
+            <img src="./images/equa.jpg" alt="Equalizer">
+        </div>
+        <h3>The Equalizer 3</h3>
+        
+    </div>
+
+  <!-- box-9  -->
+    <div class="box1">
+        <div class="box1-img">
+            <img src="./images/elvis.jpeg" alt="elvis">
+        </div>
+        <h3>Elvis</h3>
+        
+    </div>
+
+  <!-- box-10  -->
+    <div class="box1">
+        <div class="box1-img">
+            <img src="./images/eee.jpeg" alt="everything">
+        </div>
+        <h3>Everything Everywhere All at Once</h3>
+        
+    </div>
+  </div>
+</section>
+
+
+<!-- Newsletter  -->
+<section class="newsletter" id="newsletter">
+  <h2>Subscribe To Get <br>Newsletter</h2>
+  <form action="">
+      <input type="email" class="email" placeholder="Enter Email" required>
+      <input type="submit" value="Subscribe" class="btn">
+  </form>
+</section>
+
+<!-- Footer  -->
+<section class="footer">
+  <a href="" class="logo">
+      <i class="bx bxs-movie"></i>CineWorld
+  </a>
+  <div class="social">
+      <a href=""><i class='bx bxl-facebook'></i></a>
+      <a href=""><i class='bx bxl-twitter'></i></a>
+      <a href=""><i class='bx bxl-instagram'></i></a>
+  </div>
+</section>
+<div class="copyright">
+  <p>CineWorld ALL Right Reserved</p>
+</div>
+
 
 
     <!-- This is where we add our awesome JavaScript code -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    
+
+
+    
     <script src="./script.js"></script>
   </body>
 </html>
